@@ -1,0 +1,37 @@
+.MovieCard {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+}
+.MoviePic {
+  width: 300px;
+  height: 400px;
+  border: 2px solid white;
+}
+.MovieRating {
+  border: 2px solid white;
+  background-color: black;
+  padding: 5px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.MovieTitle {
+  border: 2px solid white;
+  background-color: orange;
+  color: white;
+  position: absolute;
+  bottom: -2%;
+  padding-bottom: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa {
+  color: white;
+}
+.checked {
+  color: yellow;
+}
