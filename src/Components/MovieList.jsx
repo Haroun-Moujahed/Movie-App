@@ -75,7 +75,7 @@ export class MovieList extends Component {
       this.setState({
         toAddMovie: { ...this.state.toAddMovie, img: "", title: "", rating: 0 }
       });
-    } else alert("Bara mout");
+    } else alert("One of the fields is empty");
   };
   render() {
     return (
