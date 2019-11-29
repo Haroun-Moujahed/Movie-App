@@ -1,14 +1,24 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import MovieContainer from "./Components/MovieContainer";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Hoc from "./Components/Hoc";
 
-function App() {
-  return (
-    <div className="App">
-      <MovieContainer />
-    </div>
-  );
+const MovieContainerHoc = Hoc(MovieContainer);
+class App extends Component {
+  state = {
+    isLoading: true
+  };
+  componentDidMount() {
+    setTimeout(() => this.setState({ isLoading: false }), 2000);
+  }
+  render() {
+    return (
+      <div className="App">
+        <MovieContainerHoc isLoading={this.state.isLoading} />
+      </div>
+    );
+  }
 }
 
 export default App;

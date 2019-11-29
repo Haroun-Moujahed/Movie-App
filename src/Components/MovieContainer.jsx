@@ -22,6 +22,7 @@ export class MovieContainer extends Component {
       searchItem: searchItem
     });
   };
+
   render() {
     return (
       <div>
