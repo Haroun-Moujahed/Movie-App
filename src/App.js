@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-import MovieContainer from "./Components/MovieContainer";
+import MovieContainer from "./js/Components/MovieContainer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Hoc from "./Components/Hoc";
+import Hoc from "./js/Components/Hoc";
 
 const MovieContainerHoc = Hoc(MovieContainer);
 class App extends Component {

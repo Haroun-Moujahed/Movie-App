@@ -1,24 +1,21 @@
 .MovieCard {
   position: relative;
-  width: 300px;
-  height: 400px;
   margin: 20px;
+  border: 2px solid white;
 }
 .MoviePic {
   width: 300px;
   height: 400px;
-  border: 2px solid white;
 }
 .MovieRating {
   border: 2px solid white;
   background-color: black;
   padding: 5px;
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: -0.5%;
+  right: -0.5%;
 }
 .MovieTitle {
-  border: 2px solid white;
   background-color: orange;
   color: white;
   position: absolute;
@@ -28,6 +25,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.cardButtons {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 304px;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/534/839/non_2x/abstract-black-polygon-artistic-geometric-with-gold-line-background-vector.jpg");
+  bottom: -22%;
+  left: -0.5%;
+  border: 2px solid white;
+}
+.cardButtons > * {
+  margin: 3px;
 }
 .fa {
   color: white;

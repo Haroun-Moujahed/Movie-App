@@ -5,6 +5,9 @@
   flex-wrap: wrap;
   margin: auto 50px;
 }
+.MovieList > * {
+  margin: 40px 0px;
+}
 .addMovie {
   width: 300px;
   height: 400px;
